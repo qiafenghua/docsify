@@ -26,4 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run bootstrap && npm run dev
+    - run: npm i docsify-cli -g
+    - run: docsify init ./docs
